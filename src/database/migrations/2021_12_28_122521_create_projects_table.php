@@ -16,7 +16,9 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
+            $table->longText('description')->nullable()->default(null);
             $table->boolean('is_completed')->default(false);
+            $table->foreignId('status_id')->references('id')->on('issue_statuses');
             $table->timestamps();
         });
     }

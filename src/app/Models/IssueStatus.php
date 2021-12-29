@@ -5,12 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Issue extends Model
+class IssueStatus extends Model
 {
     use HasFactory;
 
-    public function project()
-    {
-        return $this->belongsTo(Project::class);
-    }
+    protected $guarded = ['id'];
 }
