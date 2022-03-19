@@ -37,9 +37,9 @@ class ProjectController extends Controller
     /**
      * This method returns to all projects
      */
-    public function getAllProjects()
+    public function index()
     {
-        $this->projectService->getAllProjects();
+        return $this->projectService->getAllProjects();
     }
 
 }

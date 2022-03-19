@@ -28,6 +28,6 @@ class ProjectServiceImpl implements ProjectService
      */
     public function getAllProjects()
     {
-        // TODO: Implement getAllProjects() method.
+        return Project::all();
     }
 }
