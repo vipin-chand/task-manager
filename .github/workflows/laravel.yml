@@ -15,7 +15,7 @@ jobs:
       - name: Hello World
         run: echo "hello world"
         shell: bash
-  good-bye:
+  goodbye:
     runs-on: unbuntu-latest
     steps:
       - name: good bye world
